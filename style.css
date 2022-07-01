@@ -45,7 +45,7 @@
 }
 .title-item {
     position: absolute;
-    left: 120px;
+    left: 160px;
 }
 .section-contents {
     display: flex;
@@ -59,6 +59,14 @@
 .item-list {
     width: 50%;
     margin-top: 30px;
+}
+.item-list img {
+    width: 140px;
+}
+.item-list p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: 'Teko', sans-serif;
 }
 .text {
     text-align: center;
@@ -77,4 +85,20 @@
 }
 .footer-text h3 {
     padding-top: 20px;
+}
+@media screen and (max-width: 480px) {
+
+.header-list ul {
+    padding: 0;
+}    
+.title-item {
+    left: 40px;
+}
+.main {
+    height: 580px;
+}
+.text {
+    margin-top: 10px
+}
+
 }
