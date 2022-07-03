@@ -1,9 +1,41 @@
 body {
   background-color:white;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
 }
 
+.title {
+  color: white;
+}
 
+.header__ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
 
-header li {
+.header li {
   list-style: none;
+  color: white;
 }
+
+.content__img {
+  top: 0;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  }
+
+  .content__tx {
+    color: white;
+    color: white;
+    position: absolute;
+    top: 360px;
+    left: 150px;
+    font-size: 39px;
+    letter-spacing: 10px;
+  }
