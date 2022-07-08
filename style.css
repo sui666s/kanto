@@ -115,7 +115,11 @@ body {
 
 .header-list ul {
     padding: 0;
-}    
+}  
+.main-view p {
+    left: 140px;
+    font-size: 28px;
+}  
 .title-item {
     left: 40px;
 }
@@ -123,7 +127,7 @@ body {
     margin-top: 10px
 }
 .section-contents img {
-    width: 70%;
+    width: 100%;
 }
 .item-list {
     width: 100%;
@@ -132,7 +136,6 @@ body {
     margin: 0 auto;
 }
 .item-list p {
-    width: 70%;
     margin: 10px auto;
 }
 
