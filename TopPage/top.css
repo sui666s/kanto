@@ -175,11 +175,26 @@ ul {
   .construction {
     position: absolute;
     margin-top: 1850px;
+    width: 100%;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
   }
 
   .results__tx {
     font-weight: bold;
     font-size: 22px;
     letter-spacing: 5px;
-    
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .results__img {
+    height: 300px;
+    width: 100%;
   }
