@@ -142,7 +142,7 @@ ul {
     list-style: none;
     width: 20%;
     background-color: white;
-    height: 290px;
+    height: 300px;
     }
 
   .renovation-img { 
@@ -197,4 +197,50 @@ ul {
   .results__img {
     height: 300px;
     width: 100%;
+    object-fit: cover;
+    margin-bottom: 150px;
   }
+
+  .recommendation {
+    position: absolute;
+    margin-top: 2350px;
+    width: 100%;
+  }
+
+  .advice-headline__tx {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  .paragraph {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .contents__img {
+    width: 320px;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .paragraph-headline {
+    width: 635px;
+  }
+
+.headline {
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: underline 7px rgba(241, 95, 0, 0.25) ;
+  text-underline-offset: -3px;
+  }
+
+  .contents__p {
+    font-weight: bold;
+  }
+
+  
