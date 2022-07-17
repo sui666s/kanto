@@ -243,4 +243,52 @@ ul {
     font-weight: bold;
   }
 
-  
+
+  .contact {
+    position: absolute;
+    margin-top: 3120px;
+    width: 100%;
+    background-image: url(/image/トップ/問い合わせ.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+  }
+
+  .contact-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-headline{
+    color: white;
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-align: center;
+    }
+
+  .contact__p {
+    color: white;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    width: 740px;
+  }
+
+  .contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .contact__a {
+    background-color: #bca089;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 12px;
+    padding: 3px;
+    width: 250px;
+    text-align: center;
+  }
