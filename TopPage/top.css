@@ -15,19 +15,30 @@ ul {
     padding-inline-start: 0px;
   }
 
-.title {
+.title__p {
   color: white;
+  text-align: center;
+}
+
+.header-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__ul {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 50px;
+  padding-right: 10px;
 }
 
 .header li {
   list-style: none;
   color: white;
+}
+
+.header__a {
+  color: white;
+  text-decoration: none;
 }
 
 .content {
@@ -292,3 +303,34 @@ ul {
     width: 250px;
     text-align: center;
   }
+
+  .footer {
+    position: absolute;
+    margin-top: 3370px;
+    background-color: #bca089;
+    width: 100%;
+    height: 240px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__title {
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+.num__p {
+  margin: 0;
+}
+
+.address__p {
+  margin: 0;
+}
