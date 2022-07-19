@@ -1,7 +1,9 @@
-.top-img img {
-    width: 100%;
-    height: 400px;
-    
+
+
+    .top-img img {
+        width: 100%;
+        height: 500px;
+        
     }
     
     .top-img {
@@ -9,9 +11,11 @@
     }
     
     .img-text {
+        color: white;
         position: absolute;
-        margin: 0%;
-        padding: 0%;
+        top: 50%;
+        left: 10%;
+        letter-spacing: 10px;
     }
     
     .kodate-text h2 {
@@ -40,9 +44,13 @@
         .card__imgframe{
         width: 100%;
         height: 200px;
-        padding-top: 56.25%;
         background: #bbb;
         box-sizing: border-box;
+        }
+        .card__imgframe img {
+            width: 100%;
+            height: 200px;
+            
         }
         .card__textbox{
         width: 100%;
@@ -50,6 +58,7 @@
         padding: 20px 18px;
         background-color:#e9e1d4;;
         box-sizing: border-box;
+        
         }
         .card__textbox > * + *{
         margin-top: 10px;
@@ -62,10 +71,55 @@
         border-bottom: #bbb solid 2px;
         padding-bottom: 10px;
         }
+
+        .card__titletext1{
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 125%;
+            text-align: center;
+            border-bottom: #bbb solid 2px;
+            padding-bottom: 10px;
+            }
+
         
         .card__overviewtext{
-        font-size: 12px;
+        font-size: 14px;
         line-height: 150%;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        }
+
+        .card__overviewtext1 {
+            font-size: 12px;
+            line-height: 150%;
+            font-weight: bold;
+            display : flex;
+            flex-wrap: wrap;
+            text-align: center;
+
+        }
+
+        .card__overviewtext1 p {
+            padding: 0%;
+            margin: 0%;
+            width: 50%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .card__overviewtext2 {
+            font-size: 14px;
+            line-height: 150%;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .card__overviewtext2 p {
+            padding: 0%;
+            margin: 0%;  
+            padding-bottom: 8px;  
+            padding-left: 8px;
         }
     
         .mansyon-text h2 {
@@ -82,12 +136,112 @@
         .flow-contents {
             text-align: center;
         }
+
+        .flow-item {
+            position: relative;
+        }
     
         .flow-item img {
             width: 80%;
             padding-bottom: 25px;
+            height: 130px;
+
+        }
+
+        .text-contents {
+            position: absolute;
+            top: 10px;
+            left: 150px;
+
+        }
+        
+        .text-left {
+            width: 230px;
+            height: 90px;
+            position: relative;
             
         }
+        
+        .text-left p {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .text-left img {
+            width: 150px;
+            height: 60px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            
+            
+        }
+
+        .text-left h3 {
+            text-align: left;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin-top: 8px;
+            margin-bottom: 0;
+            margin-left: 10px;
+            
+            
+            
+        }
+
+        .t2 {
+            position: absolute;
+            left: 150px;
+            top: 50px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            
+            
+        }
+
+        .text-icon {
+            position: absolute;
+            top: 13px;
+            left: 220px;
+            
+        }
+
+        .text-icon img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .text-right {
+            position: absolute;
+            left: 320px;
+            top: 10px;
+            width: 500%;
+            text-align: left;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .t3 {
+            position: absolute;
+            left: 130px;
+            top: 50px;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .t4 {
+            position: absolute;
+            left: 110px;
+            top: 40px;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .t5 {
+            position: absolute;
+            top: 13px;
+        }
+
     
        
     
