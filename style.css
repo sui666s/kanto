@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 .header {
-    height: 60px;
+    height: 40px;
     background-color: #fff;
     width: 100%;
     position: relative;
@@ -15,6 +15,11 @@ body {
 .header-logo {
     font-size: 10px;
     padding: 20px 40px;
+    font-weight: 600;
+    font-family: 'YuGothic',"游ゴシック体";
+}
+.header-list {
+    width: 50%;
 }
 .header-list ul {
     display: flex;
@@ -25,6 +30,10 @@ body {
     align-items: center;
     list-style: none;
     margin-top: 4px;
+    font-family: 'YuGothic',"游ゴシック体";
+    font-weight: 600;
+    border-right: 2px solid rgb(212, 207, 207);
+    padding: 1px 14px;
 }
 .main {
     /* height: 440px; */
@@ -42,10 +51,12 @@ body {
     color: white;
     top: 34%;
     left: 50px;
+    font-weight: 600;
 }
 .section-title {
     position: relative;
     text-align: center;
+    font-family: 'YuGothic',"游ゴシック体";
 }
 .title-item {
     /* position: absolute;
@@ -75,6 +86,7 @@ body {
     margin-top: 10px;
     font-size: 12px;
     font-family: 'YuGothic',"游ゴシック体";
+    font-weight: 600;
 }
 .text {
     text-align: center;
@@ -99,11 +111,13 @@ body {
 .footer-text p {
     padding-top: 20px;
     margin-bottom: 16px;
-    font-family: 'YuGothic',"游ゴシック体";
+    font-weight: 100;
 }
 
-.p-text {
+.text p {
     padding: 0 126px;
+    font-family: 'YuGothic',"游ゴシック体";
+    font-weight: 800;
 }
 .footer-text p {
     font-size: 10px;
