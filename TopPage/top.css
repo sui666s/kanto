@@ -15,10 +15,23 @@ ul {
   padding-inline-start: 0px;
   }
 
+.title {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+}
 .title__p {
+  display: inline;
   color: white;
   text-align: center;
   margin-left: 30px;
+  font-size: 30px;
+}
+
+.header {
+  position: absolute;
+  margin-top: 40px;
+  right: 40px;
 }
 
 .header-contents {
@@ -29,7 +42,7 @@ ul {
 
 .header__ul {
   display: flex;
-  width: 500px;
+  width: 600px;
   justify-content: space-evenly;
 
 }
@@ -39,9 +52,14 @@ ul {
   color: white;
 }
 
+.header {
+  font-size: 25px;
+}
+
 .header__a {
   color: white;
   text-decoration: none;
+  font-size: 25px;
 }
 
 .content {
