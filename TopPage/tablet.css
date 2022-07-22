@@ -1,0 +1,76 @@
+@media screen  and  (min-width:744px) and (max-width:1024px){
+
+.title__p {
+  font-size: 25px;
+}
+
+.header__a {
+  font-size: 20px;
+}
+
+.corporate-philosophy {
+  margin-top: 630px;
+}
+
+.concept {
+  width: 40%;
+}
+
+.concept-img {
+  width: 220px;
+  height: 250px;
+}
+
+.concept-img {
+  margin-top: 215px;
+}
+
+.concept-img2 {
+  width: 200px;
+  height: 270px;
+}
+
+.renovation__tx {
+  font-size: 13px;
+}
+
+.hope {
+  height: 460px;
+  margin-top: 1200px;
+}
+
+.contents__p {
+  padding: 10px;
+  width: 500px;
+}
+
+.recommendation {
+  margin-top: 2200px;
+}
+
+.construction {
+  margin-top: 1700px;
+}
+
+.contact {
+  margin-top: 3050px;
+}
+
+.contact-headline {
+  margin: 20px 0 0 0;
+}
+
+.contact__p {
+  width: 700px;
+}
+
+.contact__a {
+  width: 220px;
+}
+
+.footer {
+  margin-top: 3248px;
+  height: 150px;
+}
+
+}
