@@ -6,42 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>関東ハウジング</title>
   <link rel="stylesheet" href="top.css">
+  <link rel="stylesheet" href="mobile.css" >
+  <link rel="stylesheet" href="tablet.css">
 </head>
 <body>
   <div id="global-container">
     <div id="container">
-      <header class="header">
-        <div class="header-contents">
-          <div class="title"> <p class="title__p">関東ハウジング</p></div>
-          <ul class="header__ul">
-            <li class="header__li"> <a href="#" class="header__a">事業内容</a></li>
-            <li class="header__li">|</li>
-            <li class="header__li"><a href="#" class="header__a">施工実績</a></li>
-            <li class="header__li">|</li>
-            <li class="header__li"><a href="#" class="header__a">問い合わせフォーム</a></li>
-          </ul>
+      <div id="navArea">
+        <div class="title"> <p class="title__p">関東ハウジング</p></div>
+        <nav>
+          <div class="inner">
+            <header class="header">
+              <div class="header-contents">
+                <ul class="header__ul">
+                  <li class="header__li"> <a href="#" class="header__a">事業内容</a></li>
+                  <li  class="header__li_l">|</li>
+                  <li class="header__li"><a href="#" class="header__a">施工実績</a></li>
+                  <li class="header__li_l">|</li>
+                  <li class="header__li"><a href="#" class="header__a">お問い合わせフォーム</a></li>
+                </ul>
+              </div> 
+            </header>
+          </div>
+        </nav>
+        <div class="toggle-btn">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </header>
+        <div id="mask"></div>
+      </div>
       <section>
         <div id="content">
           <div class="content__tx">理想の住まいと生活を実現</div>
-          <img src="image/トップ/home.png" alt="ホーム" class="content__img">
+          <img src="/image/トップ/home.png" alt="ホーム" class="content__img">
+          <img src="/image/トップ/トップモバイル.png" alt="スマホホーム" @media  screen and (max-width:520px) class="content__img">
         </div>
       </section>
       <div class="main-content">
         <main>
           <section>
             <div class="corporate-philosophy">
-              <div class="concept">いつまでも長く、住み心地の良い家、<br>
-              そんな家づくり
-              </div>
-              <div class="concept-2">
-                お客様の理想を実現し、いつまでも快適に住んでいただける<br>
-                家をこしらえます
-              </div>
-              <div class="concept-3">
-                お客様、ファースト<br><br>
-                24時間365日対応
+              <div class="corporate">
+                <div class="concept">いつまでも長く、住み心地の良い家、<br>
+                そんな家づくり
+                </div>
+                <div class="concept-2">
+                  お客様の理想を実現し、いつまでも快適に住んでいただける家をこしらえます。
+                </div>
+                <div class="concept-3">
+                  24時間365日対応<br><br>
+                  お客様、ファースト
+                </div>
+                <div class="concept__img">
+                  <img src="/image/トップ/いつまでも長く…１.png" alt="いつまでも長く…１" class="concept-img">
+                  <img src="/image/トップ/いつまでも長く…２.png" alt="いつまでも長く…２" class="concept-img2">
+                </div>
               </div>
             </div>
               <div class="concept__img">
@@ -81,15 +101,14 @@
               <div class="suggestion">
                 <div class="paragraph">
                   <div class="paragraph-headline"><p class="headline">建物の中で１番、劣化しやすい箇所は「屋根」！？</p>
-                    <div class="contents"><p class="contents__p">日々、紫外線や雨・風などにさらされていて、建物の中で最も劣化しやすい<br>
-                      箇所です。プロの塗装などで保護・リフォームのプロ・の私達に<br>ご相談ください。</p></div>
+                    <div class="contents"><p class="contents__p">日々、紫外線や雨・風などにさらされていて、建物の中で最も劣化しやすい箇所です。プロの塗装などで保護・リフォーム・屋根塗装のプロ私達にご相談ください。</p></div>
                   </div>
                   <img src="image/トップ/ススメ1.png" alt="ススメ1" class="contents__img">
                 </div>
                 <div class="paragraph">
                   <div class="paragraph-headline"><p class="headline">間取りは自由に変えられる？</p>
-                    <div class="contents"> <p class="contents__p"> 戸建の場合、基本的に自由度の高いリフォームが可能ですが、構造上取り除く<br>ことができない壁や柱もあります。<br>
-                      マンションの場合、マンションの構造によっては取り外せない壁があり、その場合<br>
+                    <div class="contents"> <p class="contents__p"> 戸建の場合、基本的に自由度の高いリフォームが可能ですが、構造上取り除くことができない壁や柱もあります。<br>
+                      マンションの場合、マンションの構造によっては取り外せない壁があり、その場合
                       間取りに制限が発生します。まずは弊社専門スタッフにご相談ください。</p></div>
                     </div>
                     <img src="image/トップ/ススメ2.png" alt="ススメ2" class="contents__img">
@@ -117,18 +136,19 @@
               <!-- </div> -->
             </div>
           </section>
-          <footer class="footer">
-            <div class="footer-contents">
-              <div class="footer-headline"><p class="footer__title">株式会社　関東ハウジング</p></div>
-              <div class="footer__content">
-                <p class="num__p">〒211-0012</p>
-                <p class="address__p">神奈川県川崎市中原区13-10-3312</p>
-              </div> 
-            </div>
-          </footer>
         </main>
+        <footer class="footer">
+          <div class="footer-contents">
+            <div class="footer-headline"><p class="footer__title">株式会社　関東ハウジング</p></div>
+            <div class="footer__content">
+              <p class="num__p">〒211-0012</p>
+              <p class="address__p">神奈川県川崎市中原区13-10-3312</p> 
+            </div> 
+          </div>
+        </footer>
       </div>
     </div>
   </div>
+  <script src="/TopPage/top.js"></script>
 </body>
 </html>

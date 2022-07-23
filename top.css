@@ -9,15 +9,30 @@ body {
 }
 
 ul {
-    list-style-type:none;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    padding-inline-start: 0px;
+  list-style-type:none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
   }
 
+.title {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  font-size: 30px;
+}
+
 .title__p {
+  display: inline;
   color: white;
   text-align: center;
+  margin-left: 30px;
+}
+
+.header {
+  position: absolute;
+  margin-top: 40px;
+  right: 40px;
 }
 
 .header-contents {
@@ -28,7 +43,9 @@ ul {
 
 .header__ul {
   display: flex;
-  padding-right: 10px;
+  width: 600px;
+  justify-content: space-evenly;
+
 }
 
 .header li {
@@ -36,9 +53,14 @@ ul {
   color: white;
 }
 
+.header {
+  font-size: 25px;
+}
+
 .header__a {
   color: white;
   text-decoration: none;
+  font-size: 25px;
 }
 
 .content {
@@ -54,283 +76,284 @@ ul {
   object-fit: cover;
   }
 
-  .content__tx {
-    color: white;
-    position: absolute;
-    top: 360px;
-    left: 150px;
-    font-size: 39px;
-    letter-spacing: 10px;
+.content__tx {
+  color: white;
+  position: absolute;
+  top: 360px;
+  left: 150px;
+  font-size: 39px;
+  letter-spacing: 10px;
+}
+
+.corporate-philosophy {
+  margin-top: 700px;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.concept__img {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  margin-top: -370px;
+}
+
+.concept-img {
+  object-fit: cover;
+  width: 250px;
+  margin: 50px 20px;
+  height: 300px;
+}
+
+.concept-img2 {
+  object-fit: cover;
+  width: 250px;
+  height: 400px;
+}
+
+.concept {
+  letter-spacing: 7px;
+  font-size: 22px;
+  width: 500px;
+  margin: 50px 0 0 150px;
+}
+
+.concept-2 {
+  letter-spacing: 3px;
+  margin-left: 150px;
+  margin-top: 60px;
+  font-size: 15px;
+  left: 150px;
+  width: 500px;
+}
+
+.concept-3 {
+  margin-top: 90px;
+  letter-spacing: 10px;
+  font-size: 20px;
+  margin-left: 150px;
+  width: 500px;
+}
+
+.hope {
+  width: 100vw;
+  height: 500px;
+  background-color: #e9e1d4;
+  position: absolute;
+  margin-top: 1280px;
+}
+
+.grant {
+  text-align: center;
+}
+
+.wish__tx {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
+  letter-spacing: 10px;
+  margin: 25px;
+}
+
+.renovation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.renovation__style {
+  list-style: none;
+  width: 20%;
+  background-color: white;
+  /* height: 300px; */
   }
 
-  .corporate-philosophy {
-    margin-top: 700px;
-    font-weight: bold;
-    position: absolute;
-    width: 100%;
-    height: 400px;
-  }
+.renovation-img { 
+  object-fit: cover ;
+  width: 100%;
+}
 
+.renovation__tx {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: white;
+  height: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 
-  .concept__img {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: absolute;
-    margin-top: 750px;
-    padding-bottom: 150px;
-    right: 50px;
-    align-items: center;
-  }
+.hope-btn {
+  display: inline-flex;
+  background-color: #bca089;
+  color: white;
+  letter-spacing: 5px;
+  width: 230px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-  .concept-img {
-    object-fit: cover;
-    width: 250px;
-    margin: 50px 20px;
-    height: 300px;
-  }
+.construction {
+  position: absolute;
+  margin-top: 1850px;
+  width: 100%;
+}
 
-  .concept-img2 {
-    object-fit: cover;
-    width: 250px;
-    height: 400px;
-  }
+.results {
+  display: flex;
+}
 
-  .concept {
-    letter-spacing: 7px;
-    font-size: 22px;
-    width: 500px;
-    margin-left: 150px;
-    margin-top: 50px;
-  }
-
-  .concept-2 {
-    letter-spacing: 3px;
-    margin-left: 150px;
-    margin-top: 60px;
-    font-size: 15px;
-    left: 150px;
-  
-  }
-
-  .concept-3 {
-    margin-top: 90px;
-    letter-spacing: 10px;
-    font-size: 20px;
-    margin-left: 150px;
-  }
-
-  .hope {
-    width: 100vw;
-    height: 500px;
-    background-color: #e9e1d4;
-    position: absolute;
-    margin-top: 1280px;
-  }
-
-  .grant {
-    text-align: center;
-  }
-
-  .wish__tx {
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
-    letter-spacing: 10px;
-    margin: 25px;
-  }
-
-  .renovation {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-
-  .renovation__style {
-    list-style: none;
-    width: 20%;
-    background-color: white;
-    height: 300px;
-    }
-
-  .renovation-img { 
-    object-fit: cover ;
-    width: 100%;
-  }
-
-  .renovation__tx {
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
-    margin-top: 10px;
-  }
-
-  .hope-btn {
-    display: inline-flex;
-    background-color: #bca089;
-    color: white;
-    letter-spacing: 5px;
-    width: 230px;
-    height: 40px;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .construction {
-    position: absolute;
-    margin-top: 1850px;
-    width: 100%;
-  }
-
-  .results {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-  }
-
-  .results__tx {
-    font-weight: bold;
-    font-size: 22px;
-    letter-spacing: 5px;
-    text-align: center;
-    margin-bottom: 70px;
-  }
-
-  .results__img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 150px;
-  }
-
-  .recommendation {
-    position: absolute;
-    margin-top: 2350px;
-    width: 100%;
-  }
-
-  .advice-headline__tx {
-    font-weight: bold;
-    font-size: 22px;
-    letter-spacing: 3px;
-    text-align: center;
-  }
-
-  .paragraph {
-    display: flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-
-  .contents__img {
-    width: 320px;
-    height: 160px;
-    object-fit: cover;
-  }
-
-  .paragraph-headline {
-    width: 635px;
-  }
-
-.headline {
+.results__tx {
   font-weight: bold;
   font-size: 22px;
-  text-decoration: underline 7px rgba(241, 95, 0, 0.25) ;
-  text-underline-offset: -3px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.results__img {
+  height: 300px;
+  width: 33.33%;
+  object-fit: cover;
+}
+
+.results__img3{
+  height: 300px;
+  width: 33.33%;
+  object-fit: cover;
+}
+
+.recommendation {
+  position: absolute;
+  margin-top: 2350px;
+  width: 100%;
+}
+
+.advice-headline__tx {
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.paragraph {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.contents__img {
+  width: 320px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.paragraph-headline {
+  width: 635px;
+}
+
+.headline {
+font-weight: bold;
+font-size: 22px;
+text-decoration: underline 7px rgba(241, 95, 0, 0.25) ;
+text-underline-offset: -3px;
+}
+
+.contents__p {
+  font-weight: bold;
+}
+
+
+.contact {
+  position: absolute;
+  margin-top: 3120px;
+  width: 100%;
+  background-image: url(/image/トップ/問い合わせ.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.contact-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-headline{
+  color: white;
+  font-size: 24px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  text-align: center;
   }
 
-  .contents__p {
-    font-weight: bold;
+.contact__p {
+  color: white;
+  font-size: 17px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  width: 740px;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
 
+.contact__a {
+  background-color: #bca089;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  margin-top: 12px;
+  padding: 3px;
+  width: 250px;
+  text-align: center;
+}
 
-  .contact {
-    position: absolute;
-    margin-top: 3120px;
-    width: 100%;
-    background-image: url(/image/トップ/問い合わせ.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 250px;
-  }
+.footer {
+  position: absolute;
+  margin-top: 3347px;
+  background-color: #bca089;
+  width: 100%;
+  height: 240px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .contact-contents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-  .contact-headline{
-    color: white;
-    font-size: 24px;
-    letter-spacing: 4px;
-    font-weight: bold;
-    text-align: center;
-    }
-
-  .contact__p {
-    color: white;
-    font-size: 17px;
-    letter-spacing: 4px;
-    font-weight: bold;
-    width: 740px;
-  }
-
-  .contact-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-
-  .contact__a {
-    background-color: #bca089;
-    text-decoration: none;
-    color: white;
-    letter-spacing: 3px;
-    margin-top: 12px;
-    padding: 3px;
-    width: 250px;
-    text-align: center;
-  }
-
-  .footer {
-    position: absolute;
-    margin-top: 3370px;
-    background-color: #bca089;
-    width: 100%;
-    height: 240px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer__title {
-    letter-spacing: 2px;
-    font-size: 20px;
-  }
+.footer__title {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
 
 .num__p {
-  margin: 0;
+margin: 0;
 }
 
 .address__p {
-  margin: 0;
+margin: 0;
 }
