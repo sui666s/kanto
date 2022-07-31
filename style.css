@@ -184,6 +184,31 @@ body {
     font-size: 4px;
     padding: 36px 0;
 }
+.gaiyou-main {
+    position: relative;
+}
+.gaiyou-main p {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: #fff;
+}
+.gaiyou-hyou {
+    margin: 0 auto;
+    width: 80%;
+}
+.gaiyou td,th {
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+.gaiyou-hyou th {
+    font-weight: bold;
+    background-color: #e9e1d4;
+    width: 20%;
+}
+.info {
+    display: flex;
+}
 @media screen and (max-width: 520px) {
 .html {
     width: 100%;
@@ -236,7 +261,17 @@ body {
     padding: 0;
     text-align: center;
 }
-
+.gaiyou-hyou {
+    margin: 0 auto;
+    width: 80%;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.info img {
+    padding: 0 40px;
+}
 .footer {
     width: 100%;
 }
