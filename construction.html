@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Teko:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Kantumruy+Pro:ital,wght@1,200&family=Roboto+Condensed:ital@1&family=Teko:wght@500&display=swap" rel="stylesheet">
 
@@ -12,15 +14,42 @@
     <script src="/javascript/common.js"></script>
 </head>
 <body>
+    <script src="/javascript/header.js"></script>
     <div class="header">
         <div class="header-main">
-            <div class="header-logo">関東ハウジング</div>
-            <div class="header-list">
-                <ul>
-                <li>事業内容</li>
-                <li>施工実績</li>
-                <li>お問合せフォーム</li>
-                </ul>
+            <div class="header-logo">
+                <a href="/">関東ハウジング</a>
+            </div>
+            <ul class="header-list">
+                <li><a href="flow.html">事業内容</a></li>
+                <li><a href="construction.html">施工実績</a></li>
+                <li><a href="construction.html">会社概要</a></li>
+                <li><a href="mailto:info@kantou-housing.com">お問い合わせ</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <!--ここからメニュー-->
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="header__a">トップ</a>
+                        </li>
+                        <li>
+                            <a href="flow.html" class="header__a">事業内容</a>
+                        </li>
+                        <li>
+                            <a href="construction.html" class="header__a">施工実績</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="header__a">会社概要</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__a">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--ここまでメニュー-->
             </div>
         </div>
     </div>
@@ -68,12 +97,6 @@
         <h3>comming soon</h3>
     </div>
 
-    <div class="footer">
-        <div class="footer-text">
-            <p>株式会社　関東ハウジング</p>
-            <p> 〒211-0012</p>
-            <p>神奈川県川崎市中原区中丸子13-10-3312</p>
-        </div>
-    </div>
+    <script src="./javascript/footer.js"></script>
 </body>
 </html>

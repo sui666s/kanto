@@ -8,33 +8,64 @@
   <link rel="stylesheet" href="top.css">
   <link rel="stylesheet" href="mobile.css" >
   <link rel="stylesheet" href="tablet.css">
+  <script src="javascript/index.js"></script>
 </head>
 <body>
   <div id="global-container">
     <div id="container">
       <div id="navArea">
-        <div class="title"> <p class="title__p">株式会社関東ハウジング</p></div>
+        <div class="title"> <a href="index.html" class="title__a">株式会社関東ハウジング</a></div>
         <nav>
           <div class="inner">
             <header class="header">
               <div class="header-contents">
                 <ul class="header__ul">
-                  <li class="header__li"> <a href="#" class="header__a">事業内容</a></li>
+                  <li class="header__li"> <a href="flow.html" class="header__a">事業内容</a></li>
                   <li  class="header__li_l">|</li>
-                  <li class="header__li"><a href="#" class="header__a">施工実績</a></li>
+                  <li class="header__li"><a href="construction.html" class="header__a">施工実績</a></li>
                   <li class="header__li_l">|</li>
-                  <li class="header__li"><a href="#" class="header__a">お問い合わせフォーム</a></li>
+                  <li class="header__li"><a href="construction.html" class="header__a">会社概要</a></li>
+                  <li class="header__li_l">|</li>
+                  <li class="header__li"><a href="#" class="header__a">お問い合わせ</a></li>
                 </ul>
               </div> 
             </header>
           </div>
         </nav>
-        <div class="toggle-btn">
+        <!-- <div class="toggle-btn">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div id="mask"></div>
+        <div id="mask"></div> -->
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          <!--ここからメニュー-->
+          <div class="menu-content">
+            <ul>
+              <li>
+                <a href="index.html" class="header__a">トップ</a>
+              </li>
+              <li>
+                <a href="flow.html" class="header__a">事業内容</a>
+              </li>
+                <li>
+                  <a href="flow.html" class="header__a">事業内容</a>
+                </li>
+                <li>
+                  <a href="construction.html" class="header__a">施工実績</a>
+                </li>
+                <li class="header__li">
+                  <a href="construction.html" class="header__a">会社概要</a>
+                </li>
+                <li>
+                  <a href="#" class="header__a">お問い合わせフォーム</a>
+                </li>
+            </ul>
+          </div>
+          <!--ここまでメニュー-->
+        </div>
       </div>
       <section>
         <div id="content">
@@ -48,14 +79,14 @@
           <section>
             <div class="corporate-philosophy">
               <div class="corporate">
-                <div class="concept">いつまでも長く、住み心地の良い家、<br>
+                <div class="concept">いつまでも長く、<br class="sp">住み心地の良い家、<br>
                 そんな家づくり
                 </div>
                 <div class="concept-2">
                   お客様の理想を実現し、いつまでも快適に住んでいただける家をこしらえます。
                 </div>
                 <div class="concept-3">
-                  24時間365日対応<br><br>
+                  24時間365日対応<br><br class="pc">
                   お客様、ファースト
                 </div>
                 <div class="concept__img">
@@ -96,7 +127,7 @@
               <p class="advice-headline__tx">リフォームのススメ</p>
               <div class="suggestion">
                 <div class="paragraph">
-                  <div class="paragraph-headline"><p class="headline">建物の中で１番、劣化しやすい箇所は「屋根」！？</p>
+                  <div class="paragraph-headline"><p class="headline">建物の中で１番、<br class="sp">劣化しやすい箇所は「屋根」！？</p>
                     <div class="contents"><p class="contents__p">日々、紫外線や雨・風などにさらされていて、建物の中で最も劣化しやすい箇所です。プロの塗装などで保護・リフォーム・屋根塗装のプロ私達にご相談ください。</p></div>
                   </div>
                   <img src="image/トップ/ススメ1.png" alt="ススメ1" class="contents__img">
@@ -110,7 +141,7 @@
                     <img src="image/トップ/ススメ2.png" alt="ススメ2" class="contents__img">
                 </div>
                 <div class="paragraph">
-                  <div class="paragraph-headline"><p class="headline">マンションでも天井の高さはあげられるの？</p>
+                  <div class="paragraph-headline"><p class="headline">マンションでも<br class="sp">天井の高さはあげられるの？</p>
                     <div class="contents"><p class="contents__p">天井板を外して構造体の内側までなら天井の高さを上げることも可能です。</p></div>
                   </div>
                   <img src="image/トップ/ススメ3.png" alt="ススメ3" class="contents__img">
@@ -126,8 +157,8 @@
                   屋根・外壁・リフォームのことなど、何でもお気軽にご相談ください。 <br>
                   お電話からのご相談も受け付けております。</p>
                 <div class="contact-link">
-                    <a href="#" class="contact__a">お問い合わせフォーム</a>
-                    <a href="#" class="contact__a">お電話 050-5532-5422</a>
+                    <a href="mailto:info@kantou-housing.com" class="contact__a">お問い合わせ</a>
+                    <a href="tel:050-5532-5422" class="contact__a">お電話 050-5532-5422</a>
                 </div>
               <!-- </div> -->
             </div>
@@ -145,6 +176,5 @@
       </div>
     </div>
   </div>
-  <script src="/TopPage/top.js"></script>
 </body>
 </html>

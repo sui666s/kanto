@@ -1,5 +1,109 @@
 @media screen  and (max-width:520px){
+.pc {
+  display: none!important;
+}
+.sp {
+  display: block;
+}
 
+/* ハンバーガーメニュー */
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+/* メニュー */
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: #3584bb;
+}
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+.menu-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  z-index: 80;
+  background-color: #3584bb;
+  transition: all 0.5s;/*アニメーション設定*/
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+/* ここまで */
 nav {
     display: block;
     width: 300px;
@@ -156,25 +260,32 @@ nav {
   }
   .corporate-philosophy {
     margin-top: 740px;
-  ;
   }
   
   .concept {
     letter-spacing: 5px;
     font-size: 23px;
+    margin: 0;
     margin-left: 10px;
+    width: 100%;
   }
   
   .concept-2 {
-    width: 300px;
-    margin: 80px 0 0 20px;
+    width: 70%;
+    margin: 64px 0;
+    padding: 0 8px;
+    text-align: center;
     font-size: 15px;
+    min-height: 180px;
   }
   
   .concept-3 {
-    width: 270px;
-    margin: 80px 0 0 20px;
-    font-size: 20px;
+    width: 70%;
+    margin: 80px 0 20px 0;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 15px;
+    min-height: 180px;
   }
   
   .concept__img {
@@ -189,6 +300,7 @@ nav {
     width: 130px;
     height: 170px;
     margin: 130px 15px 0 0;
+    top: -130px;
     right: 0px;
   }
   
@@ -197,13 +309,15 @@ nav {
     object-fit: cover;
     width: 120px;
     height: 140px;
-    margin-top: 290px;
+    margin-top: 230px;
     margin-right: 108px;
+    left: 50px;
     z-index: -1;
   }
   
   .hope {
     height: 720px;
+    margin-top: 1480px;
   }
   
   .wish__tx {
@@ -239,7 +353,7 @@ nav {
   }
   
   .construction {
-    margin-top: 2030px;
+    margin-top: 2230px;
   }
   
   .results {
@@ -253,16 +367,17 @@ nav {
   
   .results__img {
     height: 200px;
-    width: 40%;
+    width: 30%;
     object-fit: cover;
   }
+
   
   .results__img3 {
     width: 0;
   }
   
   .recommendation {
-    margin-top: 2400px;
+    margin-top: 2600px;
   }
   
   .advice {
@@ -275,6 +390,7 @@ nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
   }
   
   .paragraph-headline {
@@ -291,8 +407,10 @@ nav {
   
   .contents__p {
     font-weight: 10;
-    width: 420px;
+    width: 100%;
     margin: 30px 0;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
   
   .contents__img {
@@ -301,10 +419,10 @@ nav {
   }
   
   .contact {
-    margin-top: 3900px;
+    margin-top: 4100px;
     background-size: cover;
     background-position: 50%;
-    height: 470px;
+    min-height: 500px;
   }
   
   .contact-headline {
@@ -333,7 +451,7 @@ nav {
   }
   
   .footer {
-    margin-top: 4370px;
+    margin-top: 4570px;
   }
 
  }

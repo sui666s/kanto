@@ -8,6 +8,14 @@ body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
 }
 
+.sp {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
 ul {
   list-style-type:none;
   margin-block-start: 0em;
@@ -22,11 +30,11 @@ ul {
   font-size: 30px;
 }
 
-.title__p {
-  display: inline;
+.title__a {
   color: white;
   text-align: center;
   margin-left: 30px;
+  text-decoration: none;
 }
 
 .header {

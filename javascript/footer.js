@@ -1,0 +1,1 @@
+document.write('<footer class="footer"><div class="footer-contents"><div class="footer-headline"><p class="footer__title">株式会社　関東ハウジング</p></div><div class="footer__content"><p class="num__p">〒184-0012</p><p class="address__p">東京都小金井市中町4丁目3番25号 204</p> </div> </div></footer>')
