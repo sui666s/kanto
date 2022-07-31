@@ -5,6 +5,9 @@ body {
 .main {
     /* height: 440px; */
 }
+.menu-content {
+  display: none;
+}
 
 .header-main {
     display: flex;
@@ -182,6 +185,12 @@ body {
 
 .gaiyou-main {
     position: relative;
+    height: 400px;
+    margin-bottom: 128px;
+}
+.gaiyou-main img {
+    height: 100%;
+    object-fit: cover;
 }
 .gaiyou-main p {
     position: absolute;
@@ -267,6 +276,7 @@ body {
   
   /* メニュー */
   .menu-content {
+    display: block;
     width: 100%;
     height: 100%;
     position: fixed;

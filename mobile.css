@@ -7,6 +7,9 @@
 }
 
 /* ハンバーガーメニュー */
+.hamburger-menu {
+  display: block;
+}
 .menu-btn {
   position: fixed;
   top: 10px;
