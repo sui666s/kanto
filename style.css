@@ -9,32 +9,6 @@ body {
   display: none;
 }
 
-.header-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-}
-.header-logo {
-    width: 20%;
-    margin: 16px 0;
-}
-.header-list {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-}
-.header-list li {
-    list-style: none;
-    width: 30%;
-}
-
-.header-list li a {
-    text-decoration: none;
-    color: #333;
-}
-.hamburger-menu {
-    display: none;
-}
 .main-view {
     position: relative;
 }
@@ -100,32 +74,13 @@ body {
 .text h3 {
     color: #999999;
 }
-.footer {
-    /* height: 120px; */
-    padding: 32px 0;
-    background-color: rgb(223, 134, 105);
-    text-align: center;
-}
-.footer-text {
-    width: 40%;
-    margin: 0 auto;
- }
-.footer-text p {
-    padding-top: 20px;
-    margin-bottom: 16px;
-    font-weight: 100;
-}
 
 .text p {
     padding: 0 126px;
     font-family: 'YuGothic',"游ゴシック体";
     font-weight: 800;
 }
-.footer-text p {
-    font-size: 10px;
-    text-align: left;
-    font-family: 'YuGothic',"游ゴシック体";
-}
+
 .sekou {
     width: 60%;
     padding: 0 60px;
@@ -182,7 +137,7 @@ body {
     padding: 36px 0;
 }
 
-
+/* 会社概要 */
 .gaiyou-main {
     position: relative;
     height: 400px;
@@ -194,205 +149,112 @@ body {
 }
 .gaiyou-main p {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     color: #fff;
+    font-size: 64px;
 }
 .gaiyou-hyou {
-    margin: 0 auto;
+    margin: 64px auto;
     width: 80%;
 }
-.gaiyou td,th {
+.gaiyou-hyou li {
+    list-style: none;
+    display: flex;
+}
+.gaiyou-hyou p {
     border: 2px solid #ccc;
     padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
 }
-.gaiyou-hyou th {
+.gaiyou-hyou-list-title {
     font-weight: bold;
     background-color: #e9e1d4;
     width: 20%;
 }
-.info {
-    display: flex;
-}
-@media screen and (max-width: 520px) {
-    /* ハンバーガーメニュー */
-    .header {
-        padding: 8px;
-    }
-    .hamburger-menu {
-        display: block;
-    }
-    .header-logo {
-        font-size: 16px;
-        width: 100%;
-        margin: 8px 0;
-    }
-    .header-main {
-        padding: 8px;
-    }
-.menu-btn {
-    position: fixed;
-    top: 0px;
-    right: 10px;
-    display: flex;
-    height: 60px;
-    width: 60px;
-    justify-content: center;
-    align-items: center;
-    z-index: 90;
-  }
-  .menu-btn span,
-  .menu-btn span:before,
-  .menu-btn span:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: #333;
-    position: absolute;
-  }
-  .menu-btn span:before {
-    bottom: 8px;
-  }
-  .menu-btn span:after {
-    top: 8px;
-  }
-  #menu-btn-check:checked ~ .menu-btn span {
-      background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
-  }
-  #menu-btn-check:checked ~ .menu-btn span::before {
-      bottom: 0;
-      transform: rotate(45deg);
-  }
-  #menu-btn-check:checked ~ .menu-btn span::after {
-      top: 0;
-      transform: rotate(-45deg);
-  }
-  
-  #menu-btn-check {
-      display: none;
-  }
-  
-  /* メニュー */
-  .menu-content {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 80;
-    background-color: #3584bb;
-  }
-  .menu-content ul {
-    padding: 70px 10px 0;
-  }
-  .menu-content ul li {
-    border-bottom: solid 1px #ffffff;
-    list-style: none;
-  }
-  .menu-content ul li a {
-    display: block;
-    width: 100%;
-    font-size: 15px;
-    box-sizing: border-box;
-    color:#ffffff;
-    text-decoration: none;
-    padding: 9px 15px 10px 0;
-    position: relative;
-  }
-  .menu-content ul li a::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-top: solid 2px #ffffff;
-    border-right: solid 2px #ffffff;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 11px;
-    top: 16px;
-  }
-  .menu-content {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 100%;/*leftの値を変更してメニューを画面外へ*/
-    z-index: 80;
-    background-color: #3584bb;
-    transition: all 0.5s;/*アニメーション設定*/
-  }
-  
-  #menu-btn-check:checked ~ .menu-content {
-      left: 0;/*メニューを画面内へ*/
-  }
-  /* ここまで */
-.html {
-    width: 100%;
-    margin: 0 auto;
-}
-.header-list ul {
-    padding: 0;
-}
-.header-list {
-    display: none;
-}
-.main-view p {
-    left: 140px;
-    font-size: 28px;
-}  
-.title-item {
-    left: 40px;
-}
-.text {
-    margin-top: 10px
-}
-.section-contents img {
-    width: 100%;
-}
-.item-list {
-    width: 100%;
-}
-.item-list img {
-    margin: 0 auto;
-}
-.item-list p {
-    margin: 10px auto;
-}
-.sekou {
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-}
-.sekou-top {
-    padding: 0 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sekou h1 {
-    width: 100%;
-    padding: 0; 
-    text-align: center;
-}
-.sekou h2 {
-    padding: 0;
-    text-align: center;
-}
-.gaiyou-hyou {
-    margin: 0 auto;
+.gaiyou-hyou-list-content {
     width: 80%;
 }
+/* ここまで */
 .info {
     display: flex;
-    flex-direction: column;
+    width: 80%;
 }
-.info img {
-    padding: 0 40px;
-}
-.footer {
-    width: 100%;
-}
+@media screen and (max-width: 520px) {
+    .html {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main-view p {
+        left: 140px;
+        font-size: 28px;
+    }
+    .title-item {
+        left: 40px;
+    }
+    .text {
+        margin-top: 10px
+    }
+    .section-contents img {
+        width: 100%;
+    }
+    .item-list {
+        width: 100%;
+    }
+    .item-list img {
+        margin: 0 auto;
+    }
+    .item-list p {
+        margin: 10px auto;
+    }
+    .sekou {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .sekou-top {
+        padding: 0 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sekou h1 {
+        width: 100%;
+        padding: 0; 
+        text-align: center;
+    }
+    .sekou h2 {
+        padding: 0;
+        text-align: center;
+    }
+    /* 会社概要 */
+    .gaiyou-main p {
+        font-size: 24px;
+    }
+    .gaiyou-hyou {
+        margin: 32 auto;
+        width: 90%;
+        padding: 0;
+    }
+    .gaiyou-hyou li {
+        display: block;
+    }
+    .gaiyou-hyou-list-title, .gaiyou-hyou-list-content, .info {
+        width: 100%;
+    }
+    .gaiyou td {
+        padding: 10px;
+    }
+    /* ここまで */
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    .info img {
+        padding: 0 40px;
+    }
 }
