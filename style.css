@@ -43,16 +43,24 @@ body {
 }
 .title-item img{
     width: 60%;
+    height: 100%;
     display: flex;
     flex-flow: column;
 }
 .item-list {
     width: 45%;
+    height: 311px;
     margin: 20px auto;
     left: 40px;
 }
+.item-list a {
+    text-decoration: none;
+    color: #333;
+
+}
 .item-list img {
     width: 100%;
+    object-fit: cover;
 }
 .item-list p {
     margin-top: 10px;
@@ -82,7 +90,8 @@ body {
 }
 
 .sekou {
-    width: 60%;
+    width: 80%;
+    margin: 0 auto;
     padding: 0 60px;
 }
 .sekou h1 {
@@ -101,17 +110,21 @@ body {
 .sekou-top {
     display: flex;
     width: 100%;
-    padding: 0 50px;
+    padding: 32px 50px;
 }
 .sekou-heading {
+    width: 50%;
     margin-right: 40px;
 }
 .container {
     position: relative;
 }
 .container img {
-    width: 250px;
-    height: 140px;
+    /* width: 250px; */
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    /* height: 140px; */
 }
 .container p {
     position: absolute;
@@ -133,7 +146,7 @@ body {
 }
 .text-title p {
     width: 240px;
-    font-size: 4px;
+    font-size: 16px;
     padding: 36px 0;
 }
 
@@ -211,16 +224,25 @@ body {
         margin: 10px auto;
     }
     .sekou {
-        width: 100%;
+        width: 90%;
         padding: 0;
         margin: 0 auto;
     }
     .sekou-top {
-        padding: 0 20px;
+        padding: 0;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .sekou-heading {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container img {
+        width: 100%;
+        height: 350px;
     }
     .sekou h1 {
         width: 100%;
